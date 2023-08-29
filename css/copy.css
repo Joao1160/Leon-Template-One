@@ -1,0 +1,99 @@
+
+.services-content-aside {
+    display: none;
+  }
+  /* Small */
+  @media (max-width: 660px) {
+  
+    .services-content-items {
+      text-align: center;
+    }
+    .services-content-item {
+      max-width: 320px;
+      margin-bottom: 20px;
+    }
+    .services-content-item-h3 {
+      font-size: 19px;
+      margin-bottom: 30px;
+    }
+    .services-content-item-desc {
+      color: #777;
+      line-height: 1.5;
+      font-size: 15px;
+    }
+    .services-content-item-icon {
+      color: var(--main-color);
+      font-weight: bold;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  /* Medium */
+  @media (min-width: 661px) {
+    .services-content {
+      display: grid;
+      grid-template-areas: "item item ";
+    }
+    .services-content-items {
+      grid-area: item;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+    }
+    .services-content-item {
+      padding-left: 60px;
+      /* padding-right: 80px; */
+      position: relative;
+      margin-bottom: 20px;
+    }
+    .services-content-item-h3 {
+      font-size: 19px;
+      margin-bottom: 30px;
+    }
+    .services-content-item-desc {
+      color: #777;
+      line-height: 1.5;
+      font-size: 15px;
+    }
+    .services-content-item-icon {
+      color: var(--main-color);
+      font-weight: bold;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+  /* Large */
+  @media (min-width: 1200px) {
+    .services-content-item {
+      padding-left: 60px;
+      padding-right: 80px;
+      position: relative;
+      margin-bottom: 20px;
+    }
+    .services-content-items {
+      gap: 15px;
+    }
+    .services-content {
+      display: grid;
+      grid-template-areas: "item item img";
+    }
+    .services-content-aside {
+      display: block;
+      grid-area: img;
+      position: relative;
+    }
+    .services-content-aside img {
+      max-height: 75%;
+    }
+    .services-content-aside span {
+      position: absolute;
+      right: -40px;
+      height: 100%;
+      top: -60px;
+      width: 100px;
+      z-index: -1;
+      background-color: var(--secondary-color);
+    }
+  }
+  
